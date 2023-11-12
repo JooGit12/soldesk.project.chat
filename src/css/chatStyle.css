@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height:100%;
+}
+
+.wrapper{
+    height:100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.user-container {
+    background: rgb(219, 246, 112);
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+}
+
+.user-container label{
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.user-container input{
+    border-radius: 3px;
+    border: none;
+    height: 50%;
+}
+
+.display-container{
+    background-color: #FAFAD2;
+    flex: 12;
+    overflow-y: scroll; /* 내용 길어질시 스크롤 자동생성 */
+}
+
+.input-container{
+    flex:1;
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.input-container span{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+}
+
+.chatting-input{
+    font-size: 12px;
+    height: 100%;
+    flex: 8;
+    border: none;
+}
+
+.send-button{
+    flex:1;
+    background-color: #fc932b;
+    border: none;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.chatting-list li{
+    width: 90;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-top: 5px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile .user{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.profile .image{
+    border-radius: 50%;
+    object-fit: cover; /*안쓰면 이미지가 깨질 수 있음*/
+    width: 50px;
+    height: 50px;
+    flex: 1;
+}
+
+.message{
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 12px;
+    margin: 0 5px;
+    flex: 7;
+}
+
+.time{
+    font-size: 10px;
+    margin: 0 5px;
+}
+
+.user1 {
+    flex-direction: row-reverse; /* 채팅이 좌우로 나뉘게 cahtting-list li에 display:flex;를 주었기때문*/
+    
+}
+
+.user1 .message {
+    background-color: #fbc941;
+}
+
+.user2 .message{
+    background-color: aliceblue;
+    border-bottom: 2px solid rgb(249, 206, 127); /* You can change the color and thickness of the underline here */
+}
